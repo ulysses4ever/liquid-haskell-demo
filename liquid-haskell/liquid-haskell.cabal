@@ -1,0 +1,21 @@
+cabal-version:       2.4
+name:                liquid-haskell
+version:             0.1.0.0
+license:             NONE
+author:              Mike Sperber
+maintainer:          michael.sperber@active-group.de
+
+library
+  build-depends:       base,
+                       containers,
+                       liquidhaskell,
+                       liquid-prelude,
+                       liquid-vector
+
+  -- hs-source-dirs:
+  default-language:    Haskell2010
+  ghc-options:      -fwarn-incomplete-patterns -fdefer-type-errors -fplugin=LiquidHaskell
+
+  exposed-modules: Intro
+
+--  extra-prog-path: ./.bin
